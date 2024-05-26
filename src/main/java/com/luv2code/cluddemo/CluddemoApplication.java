@@ -26,12 +26,14 @@ public class CluddemoApplication {
 
 			//findStudentAndCourses(appDAO);
 
-			addMoerCoursesForStudent(appDAO);
+			//addMoreCoursesForStudent(appDAO);
+
+			deleteCourse(appDAO);
 
 		};
 	}
 
-	private void addMoerCoursesForStudent(AppDAO appDAO) {
+	private void addMoreCoursesForStudent(AppDAO appDAO) {
 
 		int theId = 2;
 		Student tempStudent = appDAO.findStudentAndCoursesByStudentId(theId);
